@@ -1,0 +1,16 @@
+{
+  "name": "papa-dashboard",
+  "private": true,
+  "packageManager": "npm@11.4.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @papa/web",
+    "build": "npm run -ws build",
+    "lint": "npm run -ws lint",
+    "test": "npm run -ws test",
+    "typecheck": "npm run -ws typecheck"
+  }
+}
